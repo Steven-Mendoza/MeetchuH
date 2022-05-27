@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es-la" class="no-js not-logged-in client-root">
+    <head>
+         <!-- <script src="./registrarse.js"></script> -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>
+Registrarte • MeetchuH
+</title>
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fredoka+One&family=Varela+Round&display=swap" rel="stylesheet">
+
+<!-- Favicon -->  
+<link rel="shortcut icon" href="/imagenes/favicon_io/favicon.ico" type="image/x-icon">  
+
+
+<link rel="stylesheet" href="css/style.css">
+
+
+    </head>
+<body>
+    
+    <section class="registro">
+        <div class="logo">
+             <h1>MeetchuH</h1>
+        </div>
+    <div class="form">
+        <div class="form1">
+        <label>Correo Electrónico:<input id="correo" class="correo" type="email" aria-required="true"  autocorrect="off" name="correo" value=""></label> <br>
+        </div>
+        <div class="form2"><label><span>Nombre Completo:</span><input class="nombre" aria-label="Nombre Completo" aria-required="true" autocapitalize="off" autocomplete="tel" autocorrect="off" name="emailOrPhone" type="text" class="_2hvTZ pexuQ zyHYP" value=""></label> <br>
+        </div>
+        <div class="form3"><label>Contraseña:</label>
+            <input onclick="mostrarmodal()" onblur="ocultarmodal()" class="contra"type="password" id="pass" name="pass" title="Debe contener al menos un numero ,una letra mayuscula, una letra minuscula y minimo 8 o mas caracteres" required>
+           </div>
+           <div id="mensajes">
+            <h5>Contraseña debe Contener lo siguiente:</h5>
+            <p class="mensaje" id="letramin" class="invalid">Una <b>Letra</b> Minuscula</p>
+            <p class="mensaje" id="letramay" class="invalid">Una <b>Letra</b> Mayuscula</p>
+            <p class="mensaje" id="numero" class="invalid">Un <b>numero</b></p>
+            <p class="mensaje" id="longitud" class="invalid">Minimo <b>8 caracteres</b></p>
+          </div>
+        <div class="form4"><label><span>Confimar Contraseña:</span><input  id="confpass" class="confcontra" aria-label="Confirmar Contraseña" aria-required="true" autocapitalize="off"  autocorrect="off" type="password" value=""></label> <br>
+        </div>
+    </div>
+    <div>
+        <button onclick="conf_pass()" type="button" id="regis" >Registrarme</button>
+    </div>
+    </section>
+    <script src="./registrarse.js"></script>
+    </body>
+</html>
