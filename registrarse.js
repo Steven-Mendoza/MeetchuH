@@ -37,11 +37,14 @@ let inputpass = document.getElementById("pass");
 
   if (cpass === password){
     alert('ContraSeñas Coinciden')
+  
  }
  else {
   alert('Contraseñas No Coinciden')
  }
+w
 }
+
  
 // let btnRegistrarse = document.getElementById('regis');
 //   btnRegistrarse.addEventListener('click',function(){
