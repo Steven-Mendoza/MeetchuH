@@ -3,6 +3,21 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       
+       
+       
+        <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
+    <header class="navbarra">        
+    <div class="navbardiv">
+              <ul>
+                <li><a href="./index.html">MeetchuH</a></li>
+                <li class="registrate"><a class="aini" href="registrarse.html">Registrate</a></li>
+              </ul>
+            </div>
+          </header>
 
         <title>
 Iniciar Sesion • MeetchuH
@@ -15,28 +30,35 @@ Iniciar Sesion • MeetchuH
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fredoka+One&family=Varela+Round&display=swap" rel="stylesheet">
 
 <!-- Favicon -->  
-<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">  
+<link rel="shortcut icon" href="/imagenes/favicon_io/favicon.ico" type="image/x-icon">  
+<!-- Font Awesome -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
+<link rel="stylesheet" href="css/style.css">
 
-<link rel="stylesheet" href="./style.css">
     </head>
 <body>
  
-    <section class="registro">
-        <div class="logo">
-             <h1>MeetchuH</h1>
-        </div>
-    <div class="form">
-        <div class="form1">
-     <label><span>Correo electrónico:</span><input class="correo"aria-label="Número de celular o correo electrónico" aria-required="true" autocapitalize="off" autocomplete="tel" autocorrect="off" name="emailOrPhone" type="text" class="_2hvTZ pexuQ zyHYP" value=""></label> <br>
-    </div>
-    <div class="form3">
-         <label><span>Contraseña:</span><input class="contra" aria-label="Contraseña" aria-required="true" autocapitalize="off" autocomplete="tel" autocorrect="off" name="emailOrPhone" type="text" class="_2hvTZ pexuQ zyHYP" value=""></label> <br>
-    </div>
-        </div>
-        <div>
-            <button class="registrarse"  type="submit">Iniciar Sesion</button>
+    <section class="registroi">
+        <div class="formulario">
+            <h4 class="h4bienvenido">Bienvenido</h4>
+            <div class="formulario1 mb-3">
+                <input type="text" class="form-control" placeholder="Correo Electronico" aria-label="Correo Electronico" aria-describedby="basic-addon1">
+            </div>
+            <div class="formulario3 mb-3">
+            <input  placeholder="Contraseña" aria-label="Contraseña" aria-describedby="basic-addon1" class="form-control" type="password" id="pass" name="pass" title="Debe contener al menos un numero ,una letra mayuscula, una letra minuscula y minimo 8 o mas caracteres" required>
+               </div>
+            <div>
+                <button  type="button" id="regis" >Iniciar Sesion</button>
+            </div>
         </div>
     </section>
+    <div class="iconos">
+        <a href="www.facebook.com"><i class="social-icon fab fa-facebook-f"></i></a>
+        <a href="www.twitter.com"><i class="social-icon fab fa-twitter"></i></a>
+        <a href="www.instagram.com"><i class="social-icon fab fa-instagram"></i></a>
+        <a href="mailto:info@fullconnections.com"><i class="social-icon fas fa-envelope"></i></a>
+        <p class="Copyright">© Copyright 2022 MeetchuH</p>
+      </div>
     </body>
 </html>

@@ -11,6 +11,9 @@ function mostrarmodal(){
   document.getElementById("mensajes").style.display = "block";
 }
 function ocultarmodal(){
+document.getElementById("mensajes").style.display = "none";
+}
+function modal(){
   let lowerCaseLetters = /[a-z]/g;
   let upperCaseLetters = /[A-Z]/g;
   let numbers = /[0-9]/g;
@@ -20,10 +23,10 @@ function ocultarmodal(){
   console.log(password);
 
    if (password.match(lowerCaseLetters) && password.length >= "8" && password.match(upperCaseLetters) && password.match(numbers)) {
-    alert('Valido')
+    alert('Contraseña Valida')
        }
        else{
-         alert('No Valido')
+         alert('Contraseña No Valida')
        }
 
 }
@@ -42,7 +45,7 @@ let inputpass = document.getElementById("pass");
  else {
   alert('Contraseñas No Coinciden')
  }
-w
+
 }
 
  

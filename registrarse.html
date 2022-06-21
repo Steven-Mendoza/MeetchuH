@@ -4,6 +4,24 @@
          <!-- <script src="./registrarse.js"></script> -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
+
+ <!-- Favicon -->  
+ <link rel="shortcut icon" href="/imagenes/favicon_io/favicon.ico" type="image/x-icon">  
+ <!-- Font Awesome -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+<header class="navbarra">        
+    <div class="navbardiv">
+              <ul class="home">
+                <li ><a href="./index.html">MeetchuH</a></li>
+                <li class="inicio_sesion"><a class="aini" href="iniciar_sesion.html">Iniciar Sesion</a></li>
+              </ul>
+            </div>
+          </header>
 
         <title>
 Registrarte • MeetchuH
@@ -15,43 +33,54 @@ Registrarte • MeetchuH
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fredoka+One&family=Varela+Round&display=swap" rel="stylesheet">
 
-<!-- Favicon -->  
-<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">  
 
 
-<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="css/style.css">
 
 
     </head>
 <body>
     
-    <section class="registro">
-        <div class="logo">
-             <h1>MeetchuH</h1>
-        </div>
-    <div class="form">
-        <div class="form1">
-        <label>Correo Electrónico:<input id="correo" class="correo" type="email" aria-required="true"  autocorrect="off" name="correo" value=""></label> <br>
-        </div>
-        <div class="form2"><label><span>Nombre Completo:</span><input class="nombre"  aria-required="true"  autocorrect="off" value=""></label> <br>
-        </div>
-        <div class="form3"><label>Contraseña:</label>  <input onclick="mostrarmodal()" onblur="ocultarmodal()" class="contra"type="password" id="pass" name="pass" title="Debe contener al menos un numero ,una letra mayuscula, una letra minuscula y minimo 8 o mas caracteres" required>
-           </div>
-           <div id="mensajes">
+    <section class="registror">
+        
+      <div class="formulario">
+          <h4 class="h4bienvenido">Registrate</h4>
+          <div class="formulario1 mb-3">
+          <input type="text" class="form-control" placeholder="Correo Electronico" aria-label="Correo Electronico" aria-describedby="basic-addon1">
+          </div>
+          <div class="formulario2 mb-3">
+          <input type="text" class="form-control"  placeholder="Nombres y Apellidos" aria-label="Nombres y Apellidos" aria-describedby="basic-addon1"  aria-required="true"  autocorrect="off" value="">
+          </div>
+          <div class="formulario3 mb-3">
+          <input onmouseover="mostrarmodal()" onmouseout="ocultarmodal()" onchange="modal()"  placeholder="Contraseña" aria-label="Contraseña" aria-describedby="basic-addon1" class="form-control" type="password" id="pass" name="pass" title="Debe contener al menos un numero ,una letra mayuscula, una letra minuscula y minimo 8 o mas caracteres" required>
+          </div>
+          <div id="mensajes">
             <h5>Contraseña debe Contener lo siguiente:</h5>
             <p class="mensaje" id="letramin" >Una <b>Letra</b> Minuscula</p>
             <p class="mensaje" id="letramay" >Una <b>Letra</b> Mayuscula</p>
             <p class="mensaje" id="numero" >Un <b>numero</b></p>
             <p class="mensaje" id="longitud" >Minimo <b>8 caracteres</b></p>
           </div>
-        <div class="form4"><label><span>Confimar Contraseña:</span><input  id="confpass" class="confcontra" aria-label="Confirmar Contraseña" aria-required="true" autocapitalize="off"  autocorrect="off" type="password" value=""></label> <br>
-        </div>
-    </div>
-    <div>
-        <button onclick="conf_pass()" type="button" id="regis" >Registrarme</button>
-    </div>
+          <div class="formulario4 mb-3">
+          <input type="password" id="confpass" class="form-control"  placeholder="Confirmar Contraseña" aria-label="Confirmar Contraseña" aria-describedby="basic-addon1"  aria-required="true"  autocorrect="off" value="">
+          </div>
+          <div>
+          <button onclick="conf_pass()" type="button" id="regis" >Registrarme</button>
+          </div>
+       </div>
+   
     </section>
     
     <script src="./registrarse.js"></script>
+    <div class="iconos">
+      <a href="www.facebook.com"><i class="social-icon fab fa-facebook-f"></i></a>
+      <a href="www.twitter.com"><i class="social-icon fab fa-twitter"></i></a>
+      <a href="www.instagram.com"><i class="social-icon fab fa-instagram"></i></a>
+      <a href="mailto:info@fullconnections.com"><i class="social-icon fas fa-envelope"></i></a>
+      <p class="Copyright">© Copyright 2022 MeetchuH</p>
+    </div>
+    <div class="pie">
+    
+    </div>
     </body>
 </html>
